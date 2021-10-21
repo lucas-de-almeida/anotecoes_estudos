@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, unused_local_variable
+
 void main() {
   num qualquerNumero = 1;
   num qualquerNumero2 = 1.2;
