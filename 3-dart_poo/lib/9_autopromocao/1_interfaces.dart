@@ -9,6 +9,12 @@ void main() {
   var gol = Gol();
 
   Carro golCarro = Gol();
+// quando checamos se a variavel é "is" de um tipo
+//caso ela seja o dart vai converte-la automaticamente
+  if (golCarro is Gol) {
+    golCarro.tipoDeRodas();
+  }
+  // (golCarro as Gol).tipoDeRodas();
   printarDadosDoCarro(gol);
   printarDadosDoCarro(uno);
 }
