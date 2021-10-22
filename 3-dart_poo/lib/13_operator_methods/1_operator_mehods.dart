@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:dart_poo/13_operator_methods/numero.dart';
 
 void main() {
