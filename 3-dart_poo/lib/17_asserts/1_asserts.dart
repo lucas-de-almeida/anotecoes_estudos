@@ -1,10 +1,12 @@
+// ignore_for_file: file_names
+
 import 'package:dart_poo/17_asserts/cliente.dart';
 
-void main(List<String> args) {
+void main() {
   var cli = Cliente(
-    cnpj: '5656565656656565',
-    cpf: '545464646464',
+    // cpf: '545464646464',
     nome: 'lucas',
-    razaoSocial: '434646.5356453',
+    razaoSocial: '5356453',
+    cnpj: '5656565656656565',
   );
 }

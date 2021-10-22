@@ -9,6 +9,14 @@ class Cliente {
     this.cpf,
     this.razaoSocial,
     this.cnpj,
-  })  : assert(nome != null, 'Nome nao pode ser nulo'),
-        assert(cpf != null, 'CPF nao pode ser nullo');
+  })  : assert(
+            (cpf != null)
+                ? nome != null && razaoSocial == null && cnpj == null
+                : true,
+            'Voce enviou cpf junto com cnpj'),
+        assert(
+            (cnpj != null)
+                ? razaoSocial != null && nome == null && cpf == null
+                : true,
+            'voce enviou cnpj junto com cpf');
 }
