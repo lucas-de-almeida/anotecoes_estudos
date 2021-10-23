@@ -2,6 +2,10 @@ void main() {
   print('inicio do p1');
   processo2();
   // metodos futures possuem dois Status (Incompleto ,Concluido (Com valor,Com erro))
+
+  //concluido com valor entra no then
+  //concluido com erro vai entrar no catchError ou onError
+  // whenComplete sempre sera excecutado
   processo3().then((value) => print(value));
   processo4()
       .then((value) => print(value))
