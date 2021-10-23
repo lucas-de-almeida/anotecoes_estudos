@@ -27,7 +27,7 @@ Future<String> processo4() {
 Future<String> processo3() {
   print('incio p3');
   return Future.delayed(Duration(seconds: 2), () => 'fim do processo p3');
-}
+} //
 
 Future<void> processo2() async {
   print('inicio do p2');
