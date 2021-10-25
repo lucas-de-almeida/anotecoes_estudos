@@ -2,6 +2,9 @@
 
 //void main é uma micro task tem prioridade na excecussão
 //quando se coloca await o programa respeita os await aguarda finalização de excecussão
+
+// o event loop precisa estar com suas filas carregadas para setar prioridaddes quando colocamos
+//await ele faz parte por parte
 import 'dart:async';
 
 Future<void> main() async {
