@@ -14,3 +14,23 @@ void main() {
 
   print('fim main');
 }
+
+/**
+ *Event
+ *Future.delayed - 1 inciar
+ *future #2 -executou
+ *future #3 -executou
+ *Future.delayed- finalizou
+ */
+
+
+
+/**
+ * MicroTask
+ * main-ok
+ * microtask #1 -ok
+ * microtask #2 -ok
+*/
+
+
+
