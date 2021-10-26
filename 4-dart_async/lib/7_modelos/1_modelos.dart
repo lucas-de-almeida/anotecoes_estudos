@@ -2,7 +2,7 @@
 
 import 'package:dart_async/7_modelos/cidade.dart';
 import 'package:dart_async/7_modelos/user_mais_facil.dart';
-import 'package:dart_async/7_modelos/usuario.dart';
+import 'package:dart_async/7_modelos/user.dart';
 import 'package:http/http.dart';
 
 void main() {
