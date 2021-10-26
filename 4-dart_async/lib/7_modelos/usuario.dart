@@ -19,10 +19,10 @@ class User {
       id: map['id'] ?? '',
       name: map['name'] ?? '',
       userName: map['username'] ?? '',
-      userTypes: map['user_types']?.map((type) {
+      userTypes: map['user_types']?.map<UserTypes>((type) {
             return UserTypes.fromMap(type);
           }).toList() ??
-          [],
+          <UserTypes>[],
     );
   }
   factory User.fromJson(String source) => User.fromMap(jsonDecode(source));
