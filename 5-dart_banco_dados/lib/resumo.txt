@@ -1,0 +1,21 @@
+instalado my sql
+aberto workbench 
+rodado comando para criar tabela
+    create database dart_mysql;
+        atualizado banco para aparecer o banco 
+        selecionado banco clicando duas vezes deixando em negrito
+
+rodado comando para criar tabela
+    create table aluno(
+	id int not null primary key auto_increment,
+    nome varchar(200)
+    );
+        clicado para atualiza e aparecer a tabela no banco
+
+
+adicionado no pubspec.yaml o pacote mysql1
+criado arquivo database.dart
+    explicação no arquivo
+
+criado arquivo dart_banco_dados.dart
+    explicação no arquivo
