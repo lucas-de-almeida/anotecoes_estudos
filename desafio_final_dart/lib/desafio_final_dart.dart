@@ -13,6 +13,8 @@ void main() async {
 
   for (var estado in listaEstados) {
     var listaCidades = await cidadeRepository.buscaCidade(estado.id);
+    await conn.query('insert into estado(id,uf,nome) values(?,?,?)',
+        [estado.id, estado.sigla, estado.nome]);
     for (var cidade in listaCidades) {
       //  print(cidade);
       await conn.query('insert into cidade(id,id_uf,nome) values(?,?,?)', [
@@ -21,8 +23,7 @@ void main() async {
         cidade.nome,
       ]);
     }
-    await conn.query('insert into estados(id,uf,nome) values(?,?,?)',
-        [estado.id, estado.sigla, estado.nome]);
+
     //print(estado);
   }
 }
