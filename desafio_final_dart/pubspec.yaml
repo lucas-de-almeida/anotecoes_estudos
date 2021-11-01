@@ -1,4 +1,4 @@
-name: dart_banco_dados
+name: desafio_final_dart
 description: A sample command-line application.
 version: 1.0.0
 # homepage: https://www.example.com
@@ -10,7 +10,6 @@ environment:
 dependencies:
   mysql1: ^0.19.2
   http: ^0.13.4
-
 
 
 dev_dependencies:
