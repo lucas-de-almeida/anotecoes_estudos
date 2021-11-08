@@ -1,0 +1,2 @@
+as imagens podem ser excolihdas de acordo com a resolução por isso se cria pastas diferentes com resoluções diferentes
+em cima do device pixel ratio ele escolhe qual pasta pegar a imagem sendo que a imagem deve ter o mesmo nome.
