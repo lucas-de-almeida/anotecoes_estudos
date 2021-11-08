@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_maonamassa/home/home_page.dart';
 import 'package:flutter_maonamassa/home/home_page_container.dart';
+import 'package:flutter_maonamassa/home/home_page_fonts.dart';
 import 'package:flutter_maonamassa/home/home_page_imagem.dart';
 
 void main() {
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: HomePageImagem());
+        home: HomePageFonts());
   }
 }
