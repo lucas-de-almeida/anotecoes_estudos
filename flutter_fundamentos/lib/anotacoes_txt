@@ -1,0 +1,22 @@
+cicos de vida -life cicle
+qual a ordem de metodos que vai ser chamada pelo flutter para abrir um widget
+
+StatelessWidgets
+    construtor
+        build
+usado em widgets estaticos
+
+StatefullWidget
+    construtor
+        createState - para criar o estado atual do widget
+            State<StatefullWidget>
+                construtor  
+                    initState - **aqui o buildContext ainda nao esta 
+                        carregado neste metodo se inicializa o que precisa ser carregado
+                        não pode usar async await nao pode retornar Future**
+
+                        didChangeDependencies - aqui ja tem o build context
+                            *build
+
+para alterar os estado do StatefullWidget se usa o setState((){});
+    isso sinaliza que houve alteração chamando novamente o **build
