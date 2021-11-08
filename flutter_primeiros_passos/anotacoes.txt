@@ -1,0 +1,75 @@
+**o que é o flutter
+é um kit de ferramentas de UI portatil do google para a criação de aplicativos bonitos e compilados de forma nativa para dispositivos moveis, web e desktop a partir de uma unica base de codigo.
+
+**para usuarios flutter 
+para os uasuarios o flutter da vida a aplicativos bonitos
+
+**para desenvolvedores
+o flutter reduz a barreira para a construção de aplicativos multi-plataforma.(barreira de linguagem(android, ios,web,desktop))
+ele acelera o desenvolvimento de aplicativos e reduz o custo e acomplexidade da pradução de aplicativos em todas a asplataformas
+
+**para designers
+para designers o flutter oferece a possibilidade de construção de telas de ponta com o maximo de aproveitamento na experiencia do usuario(UX)
+
+**para empresas
+o flutter permite a unificação de desenvolvedores de apps em uma unica equipe para dispositivos moveis ,web e desktop construindo aplicativos para varias plataformas a partir de uma unica base de codigo
+flutter acelera o desenvolvimento e sincroniza cronogramas de lancamento em toda a base de clientes
+
+**quanta experiencia de desenvolvimento eu preciso para usar o flutter?
+flutter é asseivel a programadores  familiarizados com conceitos orientados a objetos(classes,metodos,variaveis,etc) e conceitos de programação imperativos(loops,condicionais,etc).
+
+**mais de 100  aplcativos publicados
+
+**o que torna o flutter unico
+flutter é diferente da maioria das outras plataformas para construir aplicativos moveis porque nao depende da tecnologia de navegador da web e nem do conjunto de componentes que vem com cada dispositivos.
+em disso o flutter usa seu proprio mecanisnmo de renderização de alto desempenho para desenhar os componentes.
+
+
+**o que torna o flutter unico?
+alem disso o flutter é diferente porque possui uma apenas uma camada fina de codigo c/c++;
+o flutter implementa a maior parte do seu sistema (composição, gestos, animação,estrutura,widgets,etc.)em DART (uma linguagem moderna, concisa e orientada a objetos) que pode ser customizada de forma simples e facil.
+isso da aos desenvolvedores um tremendo controle sobre o sistema,bem como reduz significativamente o nivel de acessibilidade para a maioria do sistema.
+
+**com qual tecnologia o flutter é construido
+flutter é construido com C,C ++, DART e skia (um mecanismo de renderização 2D).
+
+**como o flutter executa meu codigo no android
+os codigos C e C++ são compilados com o NDK do android
+o codigo Dart(o SDK e o seu)são compilados com antecedencia (AOT)em biblioteca nativas,ARM e x86
+essas bibliotecas estao incluidas em um projeto Android "runner",e tudo esta integrado em um .apk.
+quando iniado o aplicativo carrega a biblioteca Flutter.qualquer renderização,entrada ou manipulação de eventos e assim por diante é delegada ao Flutter compilado e ao codigo do aplicativo.isso é semelhante ao funcionamento de muitos motores de jogo.
+durante o modo de dpuração, o Flutter usa uma maquina virtual(VM)para executar seu codigo a fim de habilitar o hot reload,um recurso que permite fazer alterações no codigo em execução sem recompilação.
+voce vera um banner de "depuração" no canto superior direito do seu aplicativo ao executar neste modo, para lembra-lo de que o desempenho nao é uma caracteristica do aplicativo finalizado.
+
+**como o flutter executa meu codigo no IOS?
+os codigos C e C++ do mecanismo sao compilados com LLVM.
+o codigo Dart (o SDK e o seu)são compilados com antecedencia (AOT) em uma biblioteca ARM nativa.
+essa biblioteca esta incluida em um projeto IOS "runner" e tudo esta integrado em um arquivo .ipa
+restante igaul ao android
+
+**por que o flutter escolheu o Dart?
+dart runtimes suporta a combinação de dois recursos criticos para Flutter:
+um ciclo de desenvolvimento rapido baseado em JIT(JUST IN TIME)que permite a mudança e recarregamentos dinamicos com em uma linguagem com tipos alem de um compilador AOT(AHEAD-OF-TIME)que emite codigo compilado eficiente para inicialização rapida e desempenho previsivel de implantaçções de produção
+alem disso a equipe do flutter tam a oportunidade de trabalhar em colaboração com a comunidade Dart para uso no flutter.por exemplo,quando adotamos o DART a linguagem nao tinha uma cadeia de ferramentas avancadas para a produção de binarios nativos o que é fundamental para alcançar alto desempenho previsivel mas agora a lingaugem tem porque a equipe do DART a contruiu para o Flutter
+da mesma forma o DART VM foi otimizado ateriormente para rendimento , mas a equipe agora esta otimizando a VM para a latencia, o que é mais importante para a carga de trbalho do flutter
+
+**Porque o flutter escolher usar o DART?
+*os pontos que fizeram ser escolhida foram;
+    produtividade do desenvolvedor 
+    o flutter tambem é feito em dart entao precisa ser facil de dar manutenção nas mais de 100k de linhas de codigo
+*orientação a objetos
+*previsivel, alto desempenho
+    precisa rodar em 60 quadros por segundo para ter uma experiencia rapida e fluida
+*alocação de memoria rapida
+    aloca de forma eficiente as variaveis em memoria,pois o alocamos variaveis pequenas e tempo de vida curto
+
+**qual a diferenca de hot reload e hot restart?
+*hot reload
+    funciona injetando arquivos de codigo-fonte atualizados na DART VM (maquina virtual) em exeução.isso nao apenas adiciona novas classes mas tambem adiciona metodos e campos as classes existentes e altera as funções existentes
+* o hot restart
+    redefine o estado para o estado incial do aplicativo.
+
+https://flutter.dev/docs/resources/faq
+
+
+
