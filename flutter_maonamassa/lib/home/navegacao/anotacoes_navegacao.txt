@@ -1,0 +1,24 @@
+navegação
+
+a navegação push e pushNamed
+    vai empilhando novcas telas em cima das antigas
+
+pushAndRemoveUntil && pushNamedAndRemoveUntil
+    é um comando para navegar ate uma pagina porem com uma condição atrelada
+    precisa de uma função de callback 
+    exemplo navegar ate pagina um removendo paginas ate chegar na dois
+    vai remover pagina por pagina ate chegar na pagina dois e em cima dela vai adicionar pagina um
+
+
+pushRepalcement e pushRepalcementName
+    remove a pagina que ele esta e adiciona a pagina solicitada
+    faz a substituição da pagina atual
+
+pop
+    faz a remoção de paginas toda vez que é chamado se
+    estiver na main e for chamado faz fechar o app
+
+
+popUntil
+    faz a mesma função do pop porem com uma condição atrelada
+    
