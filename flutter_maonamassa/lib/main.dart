@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_maonamassa/home/home_page.dart';
+import 'package:flutter_maonamassa/home/home_page_container.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: HomePage());
+        home: HomePageContainer());
   }
 }
