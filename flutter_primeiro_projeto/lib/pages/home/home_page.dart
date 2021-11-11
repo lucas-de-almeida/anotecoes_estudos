@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-enum PoupupMenuPages { container, rows_columns, meida_query }
+enum PoupupMenuPages { container, rows_columns, meida_query, botoes_rotacao }
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,6 +28,10 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/media_query');
 
                 break;
+              case PoupupMenuPages.botoes_rotacao:
+                Navigator.of(context).pushNamed('/botoes_rotacao');
+
+                break;
             }
           }, itemBuilder: (BuildContext context) {
             return <PopupMenuItem<PoupupMenuPages>>[
@@ -48,6 +52,13 @@ class HomePage extends StatelessWidget {
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('Media Query')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.botoes_rotacao,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Botoes Rotação')),
               ),
             ];
           }),
