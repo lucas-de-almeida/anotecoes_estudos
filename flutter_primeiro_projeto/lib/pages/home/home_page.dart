@@ -2,7 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-enum PoupupMenuPages { container, rows_columns, meida_query, botoes_rotacao }
+enum PoupupMenuPages {
+  container,
+  rows_columns,
+  meida_query,
+  botoes_rotacao,
+  singlechildscrollview,
+  list_view
+}
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,6 +39,15 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/botoes_rotacao');
 
                 break;
+              case PoupupMenuPages.singlechildscrollview:
+                Navigator.of(context)
+                    .pushNamed('/scrolls/singlechildscrollview');
+
+                break;
+              case PoupupMenuPages.list_view:
+                Navigator.of(context).pushNamed('/scrolls/list_view');
+
+                break;
             }
           }, itemBuilder: (BuildContext context) {
             return <PopupMenuItem<PoupupMenuPages>>[
@@ -59,6 +75,20 @@ class HomePage extends StatelessWidget {
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('Botoes Rotação')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.singlechildscrollview,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('single child scroll')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.list_view,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('list view')),
               ),
             ];
           }),
