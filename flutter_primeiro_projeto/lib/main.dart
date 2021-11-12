@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_primeiro_projeto/pages/botoes_rotacao/botoes_rotacao.dart';
 import 'package:flutter_primeiro_projeto/pages/container/container_page.dart';
+import 'package:flutter_primeiro_projeto/pages/dialogs/dialogs_page.dart';
 import 'package:flutter_primeiro_projeto/pages/home/home_page.dart';
 import 'package:flutter_primeiro_projeto/pages/media_query/media_query_page.dart';
 import 'package:flutter_primeiro_projeto/pages/rows_columns/rows_columns_page.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/botoes_rotacao': (_) => BotoesRotacao(),
         '/scrolls/singlechildscrollview': (_) => SinglechildscrollviewPage(),
         '/scrolls/list_view': (_) => ListviewPage(),
+        '/dialogs': (_) => DialogsPage(),
       },
     );
   }

@@ -8,7 +8,8 @@ enum PoupupMenuPages {
   meida_query,
   botoes_rotacao,
   singlechildscrollview,
-  list_view
+  list_view,
+  dialogs
 }
 
 class HomePage extends StatelessWidget {
@@ -46,6 +47,10 @@ class HomePage extends StatelessWidget {
                 break;
               case PoupupMenuPages.list_view:
                 Navigator.of(context).pushNamed('/scrolls/list_view');
+
+                break;
+              case PoupupMenuPages.dialogs:
+                Navigator.of(context).pushNamed('/dialogs');
 
                 break;
             }
@@ -89,6 +94,13 @@ class HomePage extends StatelessWidget {
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('list view')),
+              ),
+               PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.dialogs,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Dialogs')),
               ),
             ];
           }),
