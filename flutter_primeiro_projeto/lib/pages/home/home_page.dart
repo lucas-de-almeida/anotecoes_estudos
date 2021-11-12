@@ -11,7 +11,8 @@ enum PoupupMenuPages {
   list_view,
   dialogs,
   snackbars,
-  forms
+  forms,
+  cidades
 }
 
 class HomePage extends StatelessWidget {
@@ -61,6 +62,10 @@ class HomePage extends StatelessWidget {
                 break;
               case PoupupMenuPages.forms:
                 Navigator.of(context).pushNamed('/forms');
+
+                break;
+              case PoupupMenuPages.cidades:
+                Navigator.of(context).pushNamed('/cidades');
 
                 break;
             }
@@ -125,6 +130,13 @@ class HomePage extends StatelessWidget {
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('Formularios')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.cidades,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Cidades')),
               ),
             ];
           }),
