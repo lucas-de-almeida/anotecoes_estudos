@@ -9,7 +9,8 @@ enum PoupupMenuPages {
   botoes_rotacao,
   singlechildscrollview,
   list_view,
-  dialogs
+  dialogs,
+  snackbars
 }
 
 class HomePage extends StatelessWidget {
@@ -51,6 +52,10 @@ class HomePage extends StatelessWidget {
                 break;
               case PoupupMenuPages.dialogs:
                 Navigator.of(context).pushNamed('/dialogs');
+
+                break;
+              case PoupupMenuPages.snackbars:
+                Navigator.of(context).pushNamed('/snackbars');
 
                 break;
             }
@@ -95,12 +100,19 @@ class HomePage extends StatelessWidget {
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('list view')),
               ),
-               PopupMenuItem<PoupupMenuPages>(
+              PopupMenuItem<PoupupMenuPages>(
                 value: PoupupMenuPages.dialogs,
                 child: Container(
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('Dialogs')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.snackbars,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('SnackBar')),
               ),
             ];
           }),
