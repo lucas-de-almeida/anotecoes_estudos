@@ -2,7 +2,9 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_primeiro_projeto/pages/botoes_rotacao/botoes_rotacao.dart';
+import 'package:flutter_primeiro_projeto/pages/bottom_navigator_bar/bottom_navigator_bar.dart';
 import 'package:flutter_primeiro_projeto/pages/cidades/cidades_page.dart';
+import 'package:flutter_primeiro_projeto/pages/circle_avatar/circle_avatar_page.dart';
 import 'package:flutter_primeiro_projeto/pages/container/container_page.dart';
 import 'package:flutter_primeiro_projeto/pages/dialogs/dialogs_page.dart';
 import 'package:flutter_primeiro_projeto/pages/forms/forms_page.dart';
@@ -12,6 +14,8 @@ import 'package:flutter_primeiro_projeto/pages/rows_columns/rows_columns_page.da
 import 'package:flutter_primeiro_projeto/pages/scrolls/listview_page.dart';
 import 'package:flutter_primeiro_projeto/pages/scrolls/singlechildscrollview_page.dart';
 import 'package:flutter_primeiro_projeto/pages/snack_bar/snack_bar_page.dart';
+import 'package:flutter_primeiro_projeto/pages/stack/stack_page.dart';
+import 'package:flutter_primeiro_projeto/pages/stack/stack_page2.dart';
 
 void main() {
   runApp(DevicePreview(
@@ -44,7 +48,11 @@ class MyApp extends StatelessWidget {
         '/dialogs': (_) => DialogsPage(),
         '/snackbars': (_) => SnackBarPage(),
         '/forms': (_) => FormsPage(),
-        '/cidades': (_) => CidadesPage()
+        '/cidades': (_) => CidadesPage(),
+        '/stack': (_) => StackPage(),
+        '/stack/stack2': (_) => StackPage2(),
+        '/bottomnavigatorbar': (_) => BottomNavigatorBar(),
+        '/circleavatar': (_) => CircleAvatarPage(),
       },
     );
   }

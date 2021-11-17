@@ -12,7 +12,11 @@ enum PoupupMenuPages {
   dialogs,
   snackbars,
   forms,
-  cidades
+  cidades,
+  stack,
+  stack2,
+  bottomnavigatorbar,
+  circleavatar
 }
 
 class HomePage extends StatelessWidget {
@@ -66,6 +70,22 @@ class HomePage extends StatelessWidget {
                 break;
               case PoupupMenuPages.cidades:
                 Navigator.of(context).pushNamed('/cidades');
+
+                break;
+              case PoupupMenuPages.stack:
+                Navigator.of(context).pushNamed('/stack');
+
+                break;
+              case PoupupMenuPages.stack2:
+                Navigator.of(context).pushNamed('/stack/stack2');
+
+                break;
+              case PoupupMenuPages.bottomnavigatorbar:
+                Navigator.of(context).pushNamed('/bottomnavigatorbar');
+
+                break;
+              case PoupupMenuPages.circleavatar:
+                Navigator.of(context).pushNamed('/circleavatar');
 
                 break;
             }
@@ -137,6 +157,34 @@ class HomePage extends StatelessWidget {
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(30)),
                     child: Text('Cidades')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.stack,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Stack')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.stack2,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Stack 2')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.bottomnavigatorbar,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('BottomNavigator Bar')),
+              ),
+              PopupMenuItem<PoupupMenuPages>(
+                value: PoupupMenuPages.circleavatar,
+                child: Container(
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: Text('Circle Avatar')),
               ),
             ];
           }),
