@@ -73,10 +73,10 @@ class ImageAvatar extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                   color: Colors.red, borderRadius: BorderRadius.circular(5)),
-              padding: EdgeInsets.all(6),
+              padding: EdgeInsets.all(5),
               child: Text(
                 'Ao vivo',
-                style: TextStyle(fontSize: 8),
+                style: TextStyle(fontSize: 9),
               ),
             ),
           ),
